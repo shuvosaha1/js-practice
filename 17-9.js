@@ -52,13 +52,7 @@ else {
 }
 
 var t = [9,8,9];
-if (t[0] === t[1]) {
-    console.log('Isosceles');
-}
-else if (t[1] === t[2]) {
-    console.log('Isosceles');
-}
-else if (t[0] === t[2]) {
+if (t[0] === t[1] || t[0] === t[2] || t[1] === t[2]) {
     console.log('Isosceles');
 }
 else {
