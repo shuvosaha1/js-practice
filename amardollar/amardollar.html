@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmarDollar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-3xl font-bold text-center my-5">$ Dollarer Bosta $</h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-1 gap-4 w-3/4 mx-auto my-5">
+            <div class="bg-blue-400 rounded-lg p-5">
+                <h2 class="text-2xl font-bold">Balance</h2>
+                <h2 class="text-4xl">$ <span id="bAmount">10</span></h2>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto my-5">
+            <div class="bg-green-400 rounded-lg p-5">
+                <h2 class="text-2xl font-bold">Joma</h2>
+                <h2 class="text-4xl">$ <span id="jAmount">0</span></h2>
+            </div>
+            <div class="bg-red-400 rounded-lg p-5">
+                <h2 class="text-2xl font-bold">Khoroch</h2>
+                <h2 class="text-4xl">$ <span id="kAmount">0</span></h2>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-3/4 mx-auto my-5">
+            <div class="bg-yellow-400 rounded-lg p-5">
+                <h2 class="text-2xl font-bold">Rakhbo</h2>
+                <input id="rAmount" class="block my-5 h-10" type="text" placeholder="Koto dollar rakhte chao?">
+                <button id="rDone" class="bg-yellow-500 border-2 border-yellow-600 rounded p-2 my-2 hover:bg-yellow-600">Done</button>
+            </div>
+            <div class="bg-orange-400 rounded-lg p-5">
+                <h2 class="text-2xl font-bold">Tulbo</h2>
+                <input id="tAmount" class="block my-5 h-10" type="text" placeholder="Koto dollar tulte chao?">
+                <button id="tDone" class="bg-orange-500 border-2 border-orange-600 rounded p-2 my-2 hover:bg-orange-600">Done</button>
+            </div>
+        </section>
+    </main>
+    <script src="amardollar.js"></script>
+</body>
+</html>

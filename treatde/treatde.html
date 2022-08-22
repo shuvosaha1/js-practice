@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treat De</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-3xl font-bold text-center my-5">Treat De</h1>
+    </header>
+    <main>
+        <section class="bg-yellow-200 rounded-lg p-5 grid grid-cols-1 gap-4 w-3/4 mx-auto my-5">
+            <div id="b" class="bg-orange-400 rounded-lg p-5 grid grid-cols-4 gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold">SHWARMA</h2>
+                    <h2 class="text-2xl">$<span id="bAmount">100</span></h2>
+                </div>
+
+                <div class="grid grid-cols-3">
+                    <button id="bMinus" class="text-2xl bg-orange-600 hover:bg-orange-800">-</button>
+                    <input id="bCount" type="number" name="" id="" class="text-center" min="0" value="1">
+                    <button id="bPlus" class="text-2xl bg-orange-600 hover:bg-orange-800">+</button>
+                </div>
+                <h2 class="text-4xl text-center">$<span id="bTotal">100</span></h2>
+                <button id="bClose" class="text-2xl bg-red-600 rounded-md hover:bg-red-800">Baad De</button>
+
+            </div>
+            <div id="m" class="bg-orange-400 rounded-lg p-5 grid grid-cols-4 gap-4">
+                <div>
+                    <h2 class="text-2xl font-bold">MIRINDA</h2>
+                    <h2 class="text-2xl">$<span id="mAmount">25</span></h2>
+                </div>
+
+                <div class="grid grid-cols-3">
+                    <button id="mMinus" class="text-2xl bg-orange-600 hover:bg-orange-800">-</button>
+                    <input id="mCount" type="number" name="" id="" class="text-center" min="0" value="1">
+                    <button id="mPlus" class="text-2xl bg-orange-600 hover:bg-orange-800">+</button>
+                </div>
+                <h2 class="text-4xl text-center">$<span id="mTotal">25</span></h2>
+                <button id="mClose" class="text-2xl bg-red-600 rounded-md hover:bg-red-800">Baad De</button>
+
+            </div>
+            <div class="bg-yellow-400 rounded-lg p-5">
+                <div class="flex justify-between">
+                    <h2 class="text-1xl font-bold">Subtotal:</h2>
+                    <h2 class="text-2xl">$<span id="sTotal">0</span></h2>
+                </div>
+                <div class="flex justify-between">
+                    <h2 class="text-1xl font-bold">VAT 15%:</h2>
+                    <h2 class="text-2xl">$<span id="vat">0</span></h2>
+                </div>
+                <div class="flex justify-between">
+                    <h2 class="text-1xl font-bold">TOTAL:</h2>
+                    <h2 class="text-2xl">$<span id="total">0</span></h2>
+                </div>
+            </div>
+            <button class="text-1xl font-bold bg-green-600 border-2 border-green-700 rounded-lg hover:bg-green-800">Ne Kha</button>
+        </section>
+    </main>
+    <script src="treatdeUtil.js"></script>
+    <script src="treatde.js"></script>
+</body>
+</html>
